@@ -23,4 +23,10 @@ public class GameOfThronesService {
         log.info("Getting got characters random of quotes :{}", response.getBody());
         return response.getBody();
     }
+
+    public String getCharacters(){
+        ResponseEntity<String> response = gameOfThronesClient.getCharacters();
+        log.info("Got characters: {}", response.getBody());
+        return response.getBody();
+    }
 }

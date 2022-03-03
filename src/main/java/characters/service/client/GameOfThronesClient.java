@@ -12,4 +12,7 @@ public interface GameOfThronesClient {
 
     @GetMapping("/v1/random/5")
     ResponseEntity<String> getRandomQuotesFive();
+
+    @GetMapping("/v1/author/tyrion/2")
+    ResponseEntity<String> getCharacters();
 }

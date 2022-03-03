@@ -22,4 +22,9 @@ public class GameOfThronesController {
     public ResponseEntity<String> getRandomCharactersQuotes(){
         return ResponseEntity.ok(gameOfThronesService.getRandomQuotesFive());
     }
+
+    @GetMapping("/characters")
+    public ResponseEntity<String> getCharacters(){
+        return ResponseEntity.ok(gameOfThronesService.getCharacters());
+    }
 }
