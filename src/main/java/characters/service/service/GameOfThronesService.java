@@ -14,7 +14,13 @@ public class GameOfThronesService {
 
     public String getRandomCharacters(){
         ResponseEntity<String> response = gameOfThronesClient.getRandomCharacters();
-        log.info("Getting got characters of random : {}", response);
+        log.info("Getting got characters of random : {}", response.getBody());
+        return response.getBody();
+    }
+
+    public String getRandomCharactersQuotes(){
+        ResponseEntity<String> response = gameOfThronesClient.getRandomCharactersQuotes();
+        log.info("Getting got characters random of quotes :{}", response.getBody());
         return response.getBody();
     }
 }
