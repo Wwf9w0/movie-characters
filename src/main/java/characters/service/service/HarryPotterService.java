@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 @Slf4j
 @Service
-public class HarryService {
+public class HarryPotterService {
     private final HarryPotterClient harryPotterClient;
 
     public String getCharacters(){
