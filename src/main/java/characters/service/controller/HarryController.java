@@ -1,5 +1,6 @@
-package characters.service;
+package characters.service.controller;
 
+import characters.service.service.HarryService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
