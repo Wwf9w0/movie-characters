@@ -14,17 +14,17 @@ public class GameOfThronesController {
     private final GameOfThronesService gameOfThronesService;
 
     @GetMapping("/random")
-    public ResponseEntity<String> getRandomCharacters(){
+    public ResponseEntity<String> getRandomCharacters() {
         return ResponseEntity.ok(gameOfThronesService.getRandoQuotes());
     }
 
     @GetMapping("/random/5")
-    public ResponseEntity<String> getRandomCharactersQuotes(){
+    public ResponseEntity<String> getRandomCharactersQuotes() {
         return ResponseEntity.ok(gameOfThronesService.getRandomQuotesFive());
     }
 
     @GetMapping("/characters")
-    public ResponseEntity<String> getCharacters(){
+    public ResponseEntity<String> getCharacters() {
         return ResponseEntity.ok(gameOfThronesService.getCharacters());
     }
 }
