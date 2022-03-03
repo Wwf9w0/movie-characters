@@ -15,11 +15,11 @@ public class GameOfThronesController {
 
     @GetMapping("/random")
     public ResponseEntity<String> getRandomCharacters(){
-        return ResponseEntity.ok(gameOfThronesService.getRandomCharacters());
+        return ResponseEntity.ok(gameOfThronesService.getRandoQuotes());
     }
 
     @GetMapping("/random/5")
     public ResponseEntity<String> getRandomCharactersQuotes(){
-        return ResponseEntity.ok(gameOfThronesService.getRandomCharactersQuotes());
+        return ResponseEntity.ok(gameOfThronesService.getRandomQuotesFive());
     }
 }

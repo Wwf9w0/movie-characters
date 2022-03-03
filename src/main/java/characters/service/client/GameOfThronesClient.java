@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 public interface GameOfThronesClient {
 
     @GetMapping("/v1/random")
-    ResponseEntity<String> getRandomCharacters();
+    ResponseEntity<String> getRandomQuotes();
 
     @GetMapping("/v1/random/5")
-    ResponseEntity<String> getRandomCharactersQuotes();
+    ResponseEntity<String> getRandomQuotesFive();
 }

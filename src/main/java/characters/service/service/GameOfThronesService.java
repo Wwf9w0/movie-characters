@@ -12,14 +12,14 @@ import org.springframework.stereotype.Service;
 public class GameOfThronesService {
     private final GameOfThronesClient gameOfThronesClient;
 
-    public String getRandomCharacters(){
-        ResponseEntity<String> response = gameOfThronesClient.getRandomCharacters();
+    public String getRandoQuotes(){
+        ResponseEntity<String> response = gameOfThronesClient.getRandomQuotes();
         log.info("Getting got characters of random : {}", response.getBody());
         return response.getBody();
     }
 
-    public String getRandomCharactersQuotes(){
-        ResponseEntity<String> response = gameOfThronesClient.getRandomCharactersQuotes();
+    public String getRandomQuotesFive(){
+        ResponseEntity<String> response = gameOfThronesClient.getRandomQuotesFive();
         log.info("Getting got characters random of quotes :{}", response.getBody());
         return response.getBody();
     }
