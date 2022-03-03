@@ -1,2 +1,5 @@
 harry:
   url: https://hp-api.herokuapp.com
+
+got:
+  url: https://game-of-thrones-quotes.herokuapp.com
