@@ -15,4 +15,7 @@ public interface GameOfThronesClient {
 
     @GetMapping("/v1/author/tyrion/2")
     ResponseEntity<String> getCharacters();
+
+    @GetMapping("/v1/houses")
+    ResponseEntity<String> gettHouses();
 }

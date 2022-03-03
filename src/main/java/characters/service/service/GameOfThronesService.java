@@ -14,19 +14,25 @@ public class GameOfThronesService {
 
     public String getRandoQuotes(){
         ResponseEntity<String> response = gameOfThronesClient.getRandomQuotes();
-        log.info("Getting got characters of random : {}", response.getBody());
+        log.info("Get got characters of random : {}", response.getBody());
         return response.getBody();
     }
 
     public String getRandomQuotesFive(){
         ResponseEntity<String> response = gameOfThronesClient.getRandomQuotesFive();
-        log.info("Getting got characters random of quotes :{}", response.getBody());
+        log.info("Get got characters random of quotes :{}", response.getBody());
         return response.getBody();
     }
 
     public String getCharacters(){
         ResponseEntity<String> response = gameOfThronesClient.getCharacters();
         log.info("Got characters: {}", response.getBody());
+        return response.getBody();
+    }
+
+    public String getHouses(){
+        ResponseEntity<String> response = gameOfThronesClient.gettHouses();
+        log.info("Get houses : {}", response.getBody());
         return response.getBody();
     }
 }
