@@ -3,3 +3,7 @@ harry:
 
 got:
   url: https://game-of-thrones-quotes.herokuapp.com
+
+bb:
+  url: https://www.breakingbadapi.com/api
+

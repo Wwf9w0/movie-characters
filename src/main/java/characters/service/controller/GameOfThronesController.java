@@ -35,7 +35,7 @@ public class GameOfThronesController {
     }
 
     @GetMapping("/character/{name}")
-    public ResponseEntity<String> getCharacter(@PathVariable String name){
+    public ResponseEntity<String> getCharacterByName(@PathVariable String name){
         return ResponseEntity.ok(gameOfThronesService.getCharacter(name));
     }
 }
