@@ -26,4 +26,10 @@ public interface BreakingBadClient {
 
     @GetMapping("/episodes/{id}")
     ResponseEntity<String> getEpisodeById(@PathVariable String id);
+
+    @GetMapping("/deaths")
+    ResponseEntity<String> getDeaths();
+
+    @GetMapping("/death-count")
+    ResponseEntity<String> getDeathCount();
 }

@@ -40,4 +40,14 @@ public class BreakingBadController {
     public ResponseEntity<String> getEposidesById(@PathVariable String id) {
         return ResponseEntity.ok(breakingBadService.getEposidesById(id));
     }
+
+    @GetMapping("/deaths")
+    public ResponseEntity<String> getDeaths(){
+        return ResponseEntity.ok(breakingBadService.getDeaths());
+    }
+
+    @GetMapping("/deaths/count")
+    public ResponseEntity<String> getDeathCount(){
+        return ResponseEntity.ok(breakingBadService.getDeathCount());
+    }
 }

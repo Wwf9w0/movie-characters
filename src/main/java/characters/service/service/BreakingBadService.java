@@ -47,4 +47,16 @@ public class BreakingBadService {
         log.info("Get eposide by id: {} - {}", id, response.getBody());
         return response.getBody();
     }
+
+    public String getDeaths(){
+        ResponseEntity<String> response = breakingBadClient.getDeaths();
+        log.info("Get deaths: {}", response.getBody());
+        return response.getBody();
+    }
+
+    public String getDeathCount(){
+        ResponseEntity<String> response = breakingBadClient.getDeathCount();
+        log.info("Get death count : {}", response.getBody());
+        return response.getBody();
+    }
 }

@@ -13,8 +13,23 @@ import org.springframework.web.bind.annotation.RestController;
 public class HarryPotterController {
     private final HarryPotterService harryService;
 
-    @GetMapping
-    public ResponseEntity<String> getHarryPotterCharacters(){
+    @GetMapping("/characters")
+    public ResponseEntity<String> getCharacters(){
         return ResponseEntity.ok(harryService.getCharacters());
+    }
+
+    @GetMapping("/students")
+    public ResponseEntity<String> getStudents(){
+        return ResponseEntity.ok(harryService.getStudents());
+    }
+
+    @GetMapping("/house")
+    public ResponseEntity<String> getHouse(){
+        return ResponseEntity.ok(harryService.getHouse());
+    }
+
+    @GetMapping("/staff")
+    public ResponseEntity<String> getStaff(){
+        return ResponseEntity.ok(harryService.getStaff());
     }
 }
