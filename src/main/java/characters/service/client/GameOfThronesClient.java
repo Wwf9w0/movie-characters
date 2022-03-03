@@ -18,7 +18,7 @@ public interface GameOfThronesClient {
     ResponseEntity<String> getCharacters();
 
     @GetMapping("/v1/houses")
-    ResponseEntity<String> gettHouses();
+    ResponseEntity<String> getHouses();
 
     @GetMapping("/v1/character/{name}")
     ResponseEntity<String> getCharacter(@PathVariable String name);

@@ -31,7 +31,7 @@ public class GameOfThronesService {
     }
 
     public String getHouses(){
-        ResponseEntity<String> response = gameOfThronesClient.gettHouses();
+        ResponseEntity<String> response = gameOfThronesClient.getHouses();
         log.info("Get houses : {}", response.getBody());
         return response.getBody();
     }
