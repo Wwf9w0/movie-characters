@@ -35,4 +35,10 @@ public class GameOfThronesService {
         log.info("Get houses : {}", response.getBody());
         return response.getBody();
     }
+
+    public String getCharacter(String name){
+        ResponseEntity<String> response = gameOfThronesClient.getCharacter(name);
+        log.info("Get character : {} - {}", name , response.getBody());
+        return response.getBody();
+    }
 }
