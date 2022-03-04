@@ -18,6 +18,4 @@ public interface HarryPotterClient {
 
    @GetMapping("/characters/house/gryffindor")
     ResponseEntity<String> getHouse();
-
-
 }

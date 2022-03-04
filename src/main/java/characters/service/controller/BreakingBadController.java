@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 @RequestMapping("/bb")
 public class BreakingBadController {
+
     private final BreakingBadService breakingBadService;
 
     @GetMapping("/v1/characters")

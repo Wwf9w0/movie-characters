@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 @RequestMapping("harry")
 public class HarryPotterController {
+
     private final HarryPotterService harryService;
 
     @GetMapping("/characters")

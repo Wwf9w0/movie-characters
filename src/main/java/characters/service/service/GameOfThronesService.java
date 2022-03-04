@@ -12,6 +12,7 @@ import java.util.Objects;
 @Service
 @Slf4j
 public class GameOfThronesService {
+
     private final GameOfThronesClient gameOfThronesClient;
 
     public String getRandoQuotes(){

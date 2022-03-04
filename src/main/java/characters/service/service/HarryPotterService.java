@@ -12,6 +12,7 @@ import java.util.Objects;
 @Slf4j
 @Service
 public class HarryPotterService {
+
     private final HarryPotterClient harryPotterClient;
 
     public String getCharacters(){

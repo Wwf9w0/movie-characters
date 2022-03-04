@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("got")
 @RequiredArgsConstructor
 public class GameOfThronesController {
+
     private final GameOfThronesService gameOfThronesService;
 
     @GetMapping("/random")

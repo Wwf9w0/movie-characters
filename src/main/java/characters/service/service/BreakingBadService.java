@@ -12,6 +12,7 @@ import java.util.Objects;
 @Slf4j
 @RequiredArgsConstructor
 public class BreakingBadService {
+
     private final BreakingBadClient breakingBadClient;
 
     public String getCharacters(){
